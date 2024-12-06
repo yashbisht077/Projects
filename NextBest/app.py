@@ -138,7 +138,7 @@ option = st.sidebar.selectbox(
 
 with st.expander("See History"):
     try:
-        df = pd.read_csv("recommended.csv")
+        df = pd.read_csv("/mount/src/projects/NextBest/recommended.csv")
         if df.empty:
             st.write("No data available.")
         else:
