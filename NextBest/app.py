@@ -7,10 +7,10 @@ import csv
 st.set_page_config(layout="wide")
 
 # Load data from pickle file
-movie_list = pickle.load(open("movie_list.pkl", "rb"))
-anime_list = pickle.load(open("anime_list.pkl", "rb"))
-anime_similarity = pickle.load(open("anime_similarity.pkl", "rb"))
-movie_similarity = pickle.load(open("movie_similarity.pkl", "rb"))
+movie_list = pickle.load(open("/mount/src/projects/NextBest/movie_list.pkl", "rb"))
+anime_list = pickle.load(open("/mount/src/projects/NextBest/anime_list.pkl", "rb"))
+anime_similarity = pickle.load(open("/mount/src/projects/NextBest/anime_similarity.pkl", "rb"))
+movie_similarity = pickle.load(open("/mount/src/projects/NextBest/movie_similarity.pkl", "rb"))
 
 
 def save_recommendations_to_csv(movieORanime, selected_movie_or_anime, recommended_movie_or_anime):
