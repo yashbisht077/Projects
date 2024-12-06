@@ -17,7 +17,7 @@ def save_recommendations_to_csv(movieORanime, selected_movie_or_anime, recommend
     from datetime import datetime
     # Get current datetime in the desired format
     datetime_now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    file_path = 'recommended.csv'
+    file_path = '/mount/src/projects/NextBest/recommended.csv'
 
     # Create the new row to be inserted
     recommended_movie_names_str = ", ".join(recommended_movie_or_anime)
